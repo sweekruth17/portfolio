@@ -1,36 +1,68 @@
 import React from "react";
-
+import SkillsCard from "./skillsCard";
 const About = () => {
+  const languages = [
+    "Javascript (ES6+)",
+    "Typescript",
+    "Perl",
+    "Java",
+    "Python",
+    "SQL",
+  ];
+  const frameworks = [
+    "React JS",
+    "Redux/Recoil",
+    "Express JS",
+    "Next JS",
+    "Tailwind CSS",
+    "Node JS",
+    "Postgres SQL",
+    "MYSQL",
+    "Mongo DB",
+    "Bootstrap 4.0+",
+  ];
+  const devops = [
+    "Source tree",
+    "JIRA",
+    "Git",
+    "GitHub",
+    "Bitbucket",
+    "Confluence",
+    "Veracode",
+    "Jenkins",
+    "Docker",
+    "AWS",
+    "RunDeck",
+  ];
   return (
     <>
       <div className="">
-        <div className=" flex text-2xl lg:text-5xl font-medium">
-          About Me{" "}
+        <div className=" flex text-3xl lg:text-5xl font-bold">
+          About Me
           <span className="w-[200px] h-1 bg-gradient-to-r from-red-500 to-violet-700 my-auto ml-7"></span>
         </div>
         <div className="lg:columns-2 p-8 gap-x-10">
           <div className=" w-full h-full">
             <img
-              loading="lazy"
               src="ME.jpeg"
               alt=""
               className="rounded-2xl aspect-auto md:max-w-[350px] mx-auto"
             />
           </div>
           <div className="w-full text-stone-300 mt-5">
-            <div className="text-2xl font-bold">Who am I ?</div>
-            <div className="leading-6 text-lg text-left text-pretty">
+            <div className="text-2xl font-medium">Who am I ?</div>
+            <div className="leading-6 text-md text-left text-pretty">
               I am an Associate Software Engineer at Clarivate, specializing in
-              the MERN stack/Full Satck/Frontend/Backend developer - MongoDB,
-              Express.js, React.js,Typescript, and Node.js. With a Bachelor of
-              Engineering in Computer Science and Engineering, I bring expertise
-              in Next.js, Tailwind CSS, JavaScript, and TypeScript. In my role,
-              I contribute to the development of impactful Saas products like
-              Metacore and KPA, collaborating closely with teams to deliver
-              high-quality solutions that accelerate innovation in drug
-              discovery and research.
+              the MERN stack. With expertise in MongoDB, Express.js, React.js,
+              TypeScript, and Node.js, I contribute to the development of
+              impactful SaaS products like Metacore and KPA. Collaborating
+              closely with teams, I deliver high-quality solutions that
+              accelerate innovation in drug discovery and research. I hold a
+              Bachelor of Engineering in Computer Science and Engineering,
+              bringing additional proficiency in Next.js, Tailwind CSS,
+              JavaScript, and TypeScript.
             </div>
-            <div className="text-2xl font-bold mt-5">Personal Info</div>
+            <div className="text-2xl font-medium mt-5">Personal Info</div>
             <div className="  p-4">
               <div className="lg:grid lg:grid-cols-2 ">
                 <div className="flex  pb-3">
@@ -53,7 +85,7 @@ const About = () => {
                   <div className=" w-full pl-2">
                     <div>phone</div>
                     <div>{`
-                    8884537270`}</div>
+                    +91 8884537270`}</div>
                   </div>
                 </div>
               </div>
@@ -111,7 +143,51 @@ const About = () => {
         </div>
         <div>
           <div className="mt-5">
-            <div className="text-2xl font-bold ">My Arsenal 🚀</div>
+            <div className="text-3xl font-bold ">My Arsenal 🚀</div>
+            <div>
+              <div className="text-2xl font-medium mt-5 mb-3">Languages</div>
+              <div className="flex flex-wrap gap-x-2 ">
+                {languages.map((lang) => {
+                  console.log(lang);
+                  return (
+                    <>
+                      <SkillsCard lang={lang}></SkillsCard>
+                    </>
+                  );
+                })}
+              </div>
+            </div>
+            <div>
+              <div className="text-2xl font-medium mt-5 mb-3">
+                FrameWorks & Libraries
+              </div>
+              <div className="flex flex-wrap gap-x-2 ">
+                {frameworks.map((lang) => {
+                  console.log(lang);
+                  return (
+                    <>
+                      <SkillsCard lang={lang}></SkillsCard>
+                    </>
+                  );
+                })}
+              </div>
+            </div>
+            <div>
+              {" "}
+              <div className="text-2xl font-medium mt-5 mb-3">
+                Devops & CI/CD tools
+              </div>
+              <div className="flex flex-wrap gap-x-2 ">
+                {devops.map((lang) => {
+                  console.log(lang);
+                  return (
+                    <>
+                      <SkillsCard lang={lang}></SkillsCard>
+                    </>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>

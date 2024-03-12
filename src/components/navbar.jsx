@@ -4,6 +4,26 @@ import { Link } from "react-router-dom";
 const Navbar = ({ data }) => {
   const navbarCards = [
     {
+      title: "Home",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+          />
+        </svg>
+      ),
+      path: "/",
+    },
+    {
       title: "About",
       icon: (
         <svg
@@ -21,7 +41,7 @@ const Navbar = ({ data }) => {
           />
         </svg>
       ),
-      path: "/",
+      path: "/About",
     },
     {
       title: "Resume",
@@ -72,19 +92,19 @@ const Navbar = ({ data }) => {
           <div className="w-full inline-block text-5xl text-white mb-4">
             Hello 👋
             <div className="flex pt-3 z-30">
-              <div className="flex  text-white mt-3 pr-3">I'm</div>
-              <div className="flex text-6xl  bg-gradient-to-r font-name font-black pt-2 from-red-500 to-violet-700 text-transparent bg-clip-text">
+              <div className="flex  text-white mt-4 pr-3">I'm</div>
+              <div className="flex text-6xl  bg-gradient-to-r font-name font-black pt-3 from-red-500 to-violet-700 text-transparent bg-clip-text">
                 Sweekruth
               </div>
             </div>
           </div>
           <div className="container flex items-end   ">
-            <div className=" flex gap-x-10  lg:pt-20">
+            <div className=" flex gap-x-4  lg:pt-20">
               {navbarCards.map((item) => {
                 return (
                   <>
                     <Link to={item.path}>
-                      <button className="flex bg-neutral-800 px-2 py-2 text-sm h-9 md:px-5 md:py-3  md:h-12 md:text-md hover:bg-gradient-to-r from-red-500 to-violet-700 text-white rounded-md">
+                      <button className="flex bg-resumebg px-2 py-2 text-sm h-9 md:px-5 md:py-3  md:h-12 md:text-md hover:bg-gradient-to-r from-red-500 to-violet-700 text-white rounded-md">
                         <span className=" pr-1  md:pr-3">{item.icon}</span>
                         <span className="pt-0.5 md:pt-1">{item.title} </span>
                       </button>

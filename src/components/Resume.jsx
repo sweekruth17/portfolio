@@ -4,7 +4,7 @@ const Resume = () => {
   return (
     <>
       <div className="">
-        <div className=" flex text-2xl lg:text-5xl font-medium">
+        <div className=" flex text-3xl lg:text-5xl font-bold">
           Resume
           <span className="w-[200px] h-1 bg-gradient-to-r from-red-500 to-violet-700 my-auto ml-7"></span>
         </div>
@@ -14,8 +14,6 @@ const Resume = () => {
             title="sweekruth resume"
             width="100%"
             height="900px"
-            className=""
-            loading="lazy"
           />
         </div>
       </div>

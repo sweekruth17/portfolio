@@ -39,7 +39,7 @@ const Projects = () => {
     <>
       <div>
         {" "}
-        <div className=" flex text-2xl lg:text-5xl font-medium">
+        <div className=" flex text-3xl lg:text-5xl font-bold">
           Projects
           <span className="w-[200px] h-1 bg-gradient-to-r from-red-500 to-violet-700 my-auto ml-7"></span>
         </div>

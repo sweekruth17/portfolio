@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        resumebg: "#101110",
+        resumebg: "#212524",
         namecolor: "bg-gradient-to-r from-red-500 to-violet-700",
       },
       fontFamily: {
