@@ -14,7 +14,7 @@ const About = () => {
               loading="lazy"
               src="ME.jpeg"
               alt=""
-              className="rounded-2xl aspect-auto max-w-[350px] mx-auto"
+              className="rounded-2xl aspect-auto md:max-w-[350px] mx-auto"
             />
           </div>
           <div className="w-full text-stone-300 mt-5">

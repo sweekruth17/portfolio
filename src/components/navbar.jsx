@@ -12,7 +12,7 @@ const Navbar = ({ data }) => {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6"
+          className="w-5 h-5 md:w-6 md:h-6"
         >
           <path
             stroke-linecap="round"
@@ -32,7 +32,7 @@ const Navbar = ({ data }) => {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6"
+          className="w-5 h-5 md:w-6 md:h-6"
         >
           <path
             stroke-linecap="round"
@@ -53,7 +53,7 @@ const Navbar = ({ data }) => {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6"
+          className="w-5 h-5 md:w-6 md:h-6"
         >
           <path
             stroke-linecap="round"
@@ -84,9 +84,9 @@ const Navbar = ({ data }) => {
                 return (
                   <>
                     <Link to={item.path}>
-                      <button className="flex bg-neutral-800 px-5 py-3 h-12 text-md hover:bg-gradient-to-r from-red-500 to-violet-700 text-white rounded-md">
-                        <span className="pr-3">{item.icon}</span>
-                        {item.title}
+                      <button className="flex bg-neutral-800 px-2 py-2 text-sm h-9 md:px-5 md:py-3  md:h-12 md:text-md hover:bg-gradient-to-r from-red-500 to-violet-700 text-white rounded-md">
+                        <span className=" pr-1  md:pr-3">{item.icon}</span>
+                        <span className="pt-0.5 md:pt-1">{item.title} </span>
                       </button>
                     </Link>
                   </>

@@ -9,8 +9,8 @@ const Layout = () => {
         className="
       h-screen fixed w-full bg-black overflow-y-auto "
       >
-        <div className="mx-12 md:mx-[100px]  ">
-          <div className="  max-w-[1350px]  mx-auto">
+        <div className="md:mx-12 lg:mx-[100px]  ">
+          <div className="max-w-[1350px]  mx-auto">
             <Navbar></Navbar>
           </div>
 
