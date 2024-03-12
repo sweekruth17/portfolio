@@ -4,13 +4,14 @@ const About = () => {
   return (
     <>
       <div className="">
-        <div className=" flex text-5xl font-medium">
+        <div className=" flex text-2xl lg:text-5xl font-medium">
           About Me{" "}
           <span className="w-[200px] h-1 bg-gradient-to-r from-red-500 to-violet-700 my-auto ml-7"></span>
         </div>
         <div className="lg:columns-2 p-8 gap-x-10">
-          <div className=" w-full h-full  ">
+          <div className=" w-full h-full">
             <img
+              loading="lazy"
               src="ME.jpeg"
               alt=""
               className="rounded-2xl aspect-auto max-w-[350px] mx-auto"

@@ -10,11 +10,11 @@ const Layout = () => {
       h-screen fixed w-full bg-black overflow-y-auto "
       >
         <div className="mx-12 md:mx-[100px]  ">
-          <div className=" hidden md:block  max-w-[1280px] bg-black mx-auto">
+          <div className="  max-w-[1350px]  mx-auto">
             <Navbar></Navbar>
           </div>
 
-          <div className="bg-resumebg mt-20 max-w-[1280px] text-white mx-auto shadow-md p-4 px-5 md:px-10 xl:px-20 md:mt-3  rounded-2xl  ">
+          <div className="bg-resumebg mt-20 max-w-[1350px] text-white mx-auto shadow-md p-4 px-5 md:px-10 xl:px-20 md:mt-3  rounded-2xl  ">
             <Outlet />
           </div>
         </div>
