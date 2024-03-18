@@ -50,18 +50,21 @@ const About = () => {
             />
           </div>
           <div className="w-full text-stone-300 mt-5">
-            <div className="text-2xl font-medium">Who am I ?</div>
-            <div className="leading-6 text-md text-left text-pretty">
-              I am an Associate Software Engineer at Clarivate, specializing in
-              the MERN stack. With expertise in MongoDB, Express.js, React.js,
-              TypeScript, and Node.js, I contribute to the development of
-              impactful SaaS products like Metacore and KPA. Collaborating
-              closely with teams, I deliver high-quality solutions that
-              accelerate innovation in drug discovery and research. I hold a
-              Bachelor of Engineering in Computer Science and Engineering,
-              bringing additional proficiency in Next.js, Tailwind CSS,
-              JavaScript, and TypeScript.
+            <div className="inline-block">
+              <div className="text-2xl font-medium">Who am I ?</div>
+              <div className="leading-6 text-md text-left text-pretty">
+                I am an Associate Software Engineer at Clarivate, specializing
+                in the MERN stack. With expertise in MongoDB, Express.js,
+                React.js, TypeScript, and Node.js, I contribute to the
+                development of impactful SaaS products like Metacore and KPA.
+                Collaborating closely with teams, I deliver high-quality
+                solutions that accelerate innovation in drug discovery and
+                research. I hold a Bachelor of Engineering in Computer Science
+                and Engineering, bringing additional proficiency in Next.js,
+                Tailwind CSS, JavaScript, and TypeScript.
+              </div>
             </div>
+
             <div className="text-2xl font-medium mt-5">Personal Info</div>
             <div className="  p-4">
               <div className="lg:grid lg:grid-cols-2 ">
